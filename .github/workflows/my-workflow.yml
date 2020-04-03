@@ -16,11 +16,11 @@ jobs:
       with:
         first-greeting: "Learning Lab User"
 
-    - name: ha-ha
+    - name: jokes
       uses: ./.github/actions/joke-action
 
     - name: create-issue
       uses: ./.github/actions/issue-maker
       with:
         repo-token: ${{secrets.GITHUB_TOKEN}}
-        joke: ${{steps.jokes.outputs.joke-output}}
+        joke: ${{steps.jokes.outputs.joke-outputs}}
