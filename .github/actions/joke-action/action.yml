@@ -1,0 +1,11 @@
+name: "external API action"
+
+description: "use an external API tor etrieve and display a joke"
+
+outputs:
+  joke-outputs:
+    description: The resulting joke from the icanhazdadjokes API
+
+runs:
+  using: "node12"
+  main: "main.js"
